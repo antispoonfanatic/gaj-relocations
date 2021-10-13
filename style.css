@@ -111,6 +111,12 @@ header h1 {
   color: var(--cl-sec);
 }
 
+.page-img {
+  max-width: 550px;
+  float: left;
+  padding: 10px;
+}
+
 /* Tablets and under */
 @media (max-width: 768px) {
   nav .nav-toggle {
@@ -249,12 +255,7 @@ header h1 {
     background-position: -127px center;
     background-size: cover;
   }
-}
-
-@media (min-width: 767px) {
   .page-img {
-    max-width: 550px;
-    float: left;
-    padding: 10px;
+    float: none;
   }
 }
