@@ -45,6 +45,10 @@ p {
   margin: 10px 0;
 }
 
+.nav-toggle {
+  visibility: hidden;
+}
+
 .navi {
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -90,6 +94,21 @@ header h1 {
   height: 30vh;
   font-size: 10rem;
   color: var(--cl-text-sec);
+}
+
+.services-list {
+  background-color: rgb(17, 23, 71);
+  width: fit-content;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.services-list li a {
+  color: var(--cl-text-sec);
+}
+
+.services-list li a:hover {
+  color: var(--cl-sec);
 }
 
 /* Tablets and under */
@@ -157,6 +176,7 @@ header h1 {
   }
 
   .nav-toggle {
+    visibility: visible;
     padding: 0.77em;
     background: transparent;
     border: 0;
@@ -228,5 +248,13 @@ header h1 {
     text-align: center;
     background-position: -127px center;
     background-size: cover;
+  }
+}
+
+@media (min-width: 767px) {
+  .page-img {
+    max-width: 550px;
+    float: left;
+    padding: 10px;
   }
 }
